@@ -2,6 +2,10 @@
 import Head from 'next/head'
 // Import something from 'some library/location';
 import styles from '../styles/Home.module.css'
+import Header from '../components/Header';
+import Aside from '../components/Aside';
+import Section from '../components/Section';
+import Footer from '../components/Footer';
 
 // 2. Function Defination Area
 function Home() {
@@ -12,18 +16,12 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <header>
-        Header Component
-      </header>
-      
+      <Header/>
       <main>
-        <aside>Aside Component</aside>
-        <section>Section Component</section>
+        <Aside/>
+        <Section/>
       </main>
-
-      <footer>
-        Footer Component
-      </footer>
+      <Footer/>
     </>
   )
 }
